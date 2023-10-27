@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smartphone Price Prediction</h1>
+    </header>
+
+    <main>
+        <form action="/predict" method="post">
+            <label for="battery">Battery Power:</label>
+            <input type="text" name="battery" required>
+
+            <label for="blue">Bluetooth:</label>
+            <select name="blue">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="clock">Clock Speed:</label>
+            <input type="text" name="clock" required>
+
+            <label for="sim">Dual SIM:</label>
+            <select name="sim">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="frontcamera">Front Camera:</label>
+            <input type="text" name="frontcamera" required>
+
+            <label for="4G">4G:</label>
+            <select name="4G">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="memory">Internal Memory:</label>
+            <input type="text" name="memory" required>
+
+            <label for="depth">Depth:</label>
+            <input type="text" name="depth" required>
+
+            <label for="weight">Weight:</label>
+            <input type="text" name="weight" required>
+
+            <label for="cores">Number of Cores:</label>
+            <input type="text" name="cores" required>
+
+            <label for="camera">Primary Camera:</label>
+            <input type="text" name="camera" required>
+
+            <label for="height">Pixel Height:</label>
+            <input type="text" name="height" required>
+
+            <label for="width">Pixel Width:</label>
+            <input type="text" name="width" required>
+
+            <label for="ram">RAM:</label>
+            <input type="text" name="ram" required>
+
+            <label for="srheight">Screen Height:</label>
+            <input type="text" name="srheight" required>
+
+            <label for="srwidth">Screen Width:</label>
+            <input type="text" name="srwidth" required>
+
+            <label for="time">Talk Time:</label>
+            <input type="text" name="time" required>
+
+            <label for="3G">3G:</label>
+            <select name="3G">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="touchscreen">Touch Screen:</label>
+            <select name="touchscreen">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="wifi">Wi-Fi:</label>
+            <select name="wifi">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <!-- Add other form fields... -->
+
+            <button type="submit">Predict</button>
+        </form>
+    </main>
+</body>
+</html>
